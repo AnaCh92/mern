@@ -40,17 +40,20 @@ python app.py
 
 ## Funcionalidades
 
-✅ Listar usuarios
-✅ Crear nuevo usuario
-✅ Editar usuario existente
-✅ Eliminar usuario
-✅ Ver detalles de usuario
-✅ Mensajes de éxito/error
-✅ Interfaz responsiva con Bootstrap y temática Pokémon
+* ✅ Listar usuarios
+* ✅ Crear nuevo usuario
+* ✅ Editar usuario existente
+* ✅ Eliminar usuario
+* ✅ Ver detalles de usuario
+* ✅ Mensajes de éxito/error
+* ✅ Interfaz responsiva con Bootstrap y temática Pokémon
 
 ## **Características del CRUD**
 
-✅ Create: Crear nuevos usuarios
-✅ Read: Listar y ver detalles de usuarios
-✅ Update: Editar usuarios existentes
-✅ Delete: Eliminar usuarios
+* ✅ Create: Crear nuevos usuarios
+* ✅ Read: Listar y ver detalles de usuarios
+* ✅ Update: Editar usuarios existentes
+* ✅ Delete: Eliminar usuarios
+
+  <img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/26553a2f-002f-486a-a6c6-c956a03467ce" />
+
