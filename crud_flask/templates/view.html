@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <h1 class="mb-4">Detalles del Usuario</h1>
+        
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ user['name'] }}</h5>
+                <hr>
+                <p class="card-text"><strong>ID:</strong> {{ user['id'] }}</p>
+                <p class="card-text"><strong>Email:</strong> {{ user['email'] }}</p>
+                <p class="card-text"><strong>Teléfono:</strong> {{ user['phone'] or 'N/A' }}</p>
+                <p class="card-text"><strong>Fecha de Creación:</strong> {{ user['created'] }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{ url_for('edit', user_id=user['id']) }}" class="btn btn-warning">Editar</a>
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

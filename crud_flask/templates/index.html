@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Lista de Usuarios</h1>
+    <a href="{{ url_for('create') }}" class="btn btn-primary">Nuevo Usuario</a>
+</div>
+
+{% if users %}
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID
+                        <img src="{{ url_for('static', filename='img/pikachu.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                    <th>Nombre
+                        <img src="{{ url_for('static', filename='img/bullbasaur.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                    <th>Email
+                        <img src="{{ url_for('static', filename='img/jigglypuff.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                    <th>Teléfono
+                        <img src="{{ url_for('static', filename='img/eevee.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                    <th>Fecha Creación
+                        <img src="{{ url_for('static', filename='img/squirtle.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                    <th>Acciones
+                        <img src="{{ url_for('static', filename='img/avatar.png') }}" alt="Pin de Pokémon" style="height: 24px; margin-left: 8px;"> 
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user['id'] }}</td>
+                    <td>{{ user['name'] }}</td>
+                    <td>{{ user['email'] }}</td>
+                    <td>{{ user['phone'] or 'N/A' }}</td>
+                    <td>{{ user['created'] }}</td>
+                    <td>
+                        <a href="{{ url_for('view', user_id=user['id']) }}" class="btn btn-info btn-sm">Ver</a>
+                        <a href="{{ url_for('edit', user_id=user['id']) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ url_for('delete', user_id=user['id']) }}" class="btn btn-danger btn-sm" 
+                           onclick="return confirm('¿Estás seguro de eliminar este usuario?')">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="alert alert-info">
+        No hay usuarios registrados. <a href="{{ url_for('create') }}">Crear el primero</a>
+    </div>
+{% endif %}
+{% endblock %}
