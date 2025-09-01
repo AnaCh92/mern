@@ -55,5 +55,24 @@ python app.py
 * ✅ Update: Editar usuarios existentes
 * ✅ Delete: Eliminar usuarios
 
-  <img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/26553a2f-002f-486a-a6c6-c956a03467ce" />
 
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/c1956790-c82b-4572-859d-bcb28a466e89" />
+    </td>
+    <td>
+      <img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/7fbe875b-80f4-4464-b686-aa41cc80c693" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <img width="1366" height="765" alt="imagen" src="https://github.com/user-attachments/assets/1c17377a-35c0-4fb0-bb09-b7152f0519c9" />
+    </td>
+    <td>
+      <img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/26553a2f-002f-486a-a6c6-c956a03467ce" />
+    </td>
+  </tr>
+</table>
