@@ -1,6 +1,8 @@
 
 ## Estructura del Proyecto
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" width="100">
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" width="125">
+    </div>
 # CRUD Flask - Sistema de Usuarios
 
 Este proyecto es una aplicación web CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de usuarios, desarrollada con [Flask](https://flask.palletsprojects.com/).
